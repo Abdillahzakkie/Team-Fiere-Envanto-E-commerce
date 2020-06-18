@@ -57,20 +57,6 @@ button {
     letter-spacing: .2rem;
     word-spacing: .25rem;
 }
-.title .card select {
-    width: 250px;
-    height: 30px;
-    outline: none;
-}
 .title .card span {
     text-transform: lowercase;
-}
-
-@media (max-width: 599px) {
-    .title {
-    padding: 1rem 0;
-    }
-    .title .card {
-        padding: 0;
-    }
 }
