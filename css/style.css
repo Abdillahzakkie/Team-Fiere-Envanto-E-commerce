@@ -30,17 +30,25 @@ button {
     /* width: 100%; */
     margin: 0 auto;
 }
+.navbar-header {
+    padding: .5rem;
+}
 #slider {
     height: 70vh !important;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
 }
 
-
+.navbar-collapse {
+    padding: 0 2rem;
+}
+.navbar-toggle{
+    margin-right: 0 !important;
+}
 /* Header css */
 .title {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    margin: 0 auto;
-    padding: 1rem 3rem;
+    margin: 0 auto 3rem;
+    padding: 0rem 3rem;
     width: 100%;
     background: var(--mainWhite);
     color: var(--darkGrey);
@@ -59,4 +67,10 @@ button {
 }
 .title .card span {
     text-transform: lowercase;
+}
+
+@media (max-width: 767px) {
+    .navbar-header {
+        width: 100vw;
+    }
 }
