@@ -15,6 +15,13 @@ button {
     color: inherit;
     outline: none;
 }
+
+.center {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin: 0 auto;
+}
 .container-fluid {
     width: 100vw;
     padding: 0;
