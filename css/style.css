@@ -22,32 +22,16 @@ button {
     grid-template-rows: auto;
     margin: 0 auto;
 }
-.container-fluid {
+.defaultBcg {
+    background: linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,.5)),
+        url('../images/services-bg.jpg') center/cover no-repeat;
     width: 100vw;
-    padding: 0;
-}
-.navbar-default {
-    /* width: 100%; */
-    margin: 0 auto;
-}
-.navbar-header {
-    padding: .5rem;
-}
-#slider {
-    height: 70vh !important;
-    margin-bottom: 0;
-}
-
-.navbar-collapse {
-    padding: 0 2rem;
-}
-.navbar-toggle{
-    margin-right: 0 !important;
+    height: 70vh;
 }
 /* Header css */
 .title {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    margin: 0 auto 3rem;
+    margin: 0 auto 1.5rem;
     padding: 0rem 3rem;
     width: 100%;
     background: var(--mainWhite);

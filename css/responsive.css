@@ -1,7 +1,7 @@
 @media (max-width: 599px) {
     .services-container {
         padding: 0 ;
-        margin-top: 50rem;
+        /* margin-top: 10rem; */
     }
     .services .card {
         margin: 0 auto 2rem;
