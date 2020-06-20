@@ -1,31 +1,53 @@
-/*price range*/
+let navToggle = document.querySelector(".nav-toggle");
+const links = document.querySelector(".links");
 
-if ($.fn.slider) {
-    $('#sl2').slider();
+navToggle.addEventListener("click", function () {
+  links.classList.toggle("show-links");
+});
+
+
+// Slider
+
+const slides = document.querySelectorAll(".slide");
+const nextBtn = document.querySelector(".nextBtn");
+const prevBtn = document.querySelector(".prevBtn");
+slides.forEach(function (slide, index) {
+  slide.style.left = `${index * 100}%`;
+});
+let counter = 0;
+nextBtn.addEventListener("click", function () {
+  counter++;
+  carousel();
+});
+
+prevBtn.addEventListener("click", function () {
+  counter--;
+  carousel();
+});
+
+function carousel() {
+  // working with slides
+  // if (counter === slides.length) {
+  //   counter = 0;
+  // }
+  // if (counter < 0) {
+  //   counter = slides.length - 1;
+  // }
+  // working with buttons
+
+  if (counter < slides.length - 1) {
+    nextBtn.style.display = "block";
+  } else {
+    nextBtn.style.display = "none";
+  }
+  if (counter > 0) {
+    prevBtn.style.display = "block";
+  } else {
+    prevBtn.style.display = "none";
+  }
+  slides.forEach(function (slide) {
+    slide.style.transform = `translateX(-${counter * 100}%)`;
+  });
 }
 
-var RGBChange = function () {
-    $('#RGB').css('background', 'rgb(' + r.getValue() + ',' + g.getValue() + ',' + b.getValue() + ')')
-};
-
-/*scroll to top*/
-
-$(document).ready(function () {
-    $(function () {
-        $.scrollUp({
-            scrollName: 'scrollUp',
-            scrollDistance: 300,
-            scrollFrom: 'top',
-            scrollSpeed: 300,
-            easingType: 'linear',
-            animation: 'fade',
-            animationSpeed: 200,
-            scrollTrigger: false, 
-            scrollText: '<i class="fa fa-angle-up"></i>', 
-            scrollTitle: false, 
-            scrollImg: false, 
-            activeOverlay: false,
-            zIndex: 2147483647 
-        });
-    });
-});
+prevBtn.style.display = "none";

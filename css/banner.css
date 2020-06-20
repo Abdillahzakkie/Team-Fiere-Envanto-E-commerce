@@ -1,0 +1,35 @@
+.banner-container{
+    place-items: center;
+    letter-spacing: .1rem;
+    word-spacing: .3rem;
+    width: 100vw;
+}
+.banner {
+    width: 57vw;
+    margin: 0vh auto 0;
+    background: rgba(128, 128, 128, .7);
+    padding: 2rem;
+    text-align: center;
+    line-height: 2;
+    color: var(--mainWhite)
+}
+.banner h2 { font-weight: 900 }
+.banner h2 span { color: var(--red) }
+
+.banner > div {
+    width: 200px;
+    height: 2.5px;
+    background: var(--red);
+    place-self: center;
+}
+.banner button {
+    margin: .75rem 0;
+    padding: .5rem 1rem;
+    text-transform: capitalize;
+    letter-spacing: .1rem;
+    background: transparent;
+    border: .05rem solid var(--mainWhite);
+    color: var(--mainWhite);
+    transition: var(--mainTransition);
+}
+.banner button:hover { background: var(--red) }
