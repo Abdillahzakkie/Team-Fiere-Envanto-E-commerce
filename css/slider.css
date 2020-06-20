@@ -19,8 +19,11 @@
 .slider-container .slider-btn {
     position: absolute;
     top: 50vh;
-    padding: 1rem;
+    padding: 1rem .5rem;
+    background: none;
+    color: var(--mainWhite);
+    font-size: 2rem;
 }
 
-#prevBtn { left: 20px }
-#nextBtn { right: 20px }
+#prevBtn { left: 0 }
+#nextBtn { right: 0 }

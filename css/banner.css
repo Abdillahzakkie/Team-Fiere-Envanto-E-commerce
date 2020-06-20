@@ -7,17 +7,15 @@
 .banner {
     width: 57vw;
     margin: 0vh auto 0;
-    background: rgba(128, 128, 128,.5);
+    background: rgba(128, 128, 128, .7);
     padding: 2rem;
     text-align: center;
     line-height: 2;
+    color: var(--mainWhite)
 }
-.banner h2 {
-    font-weight: 900;
-}
-.banner h2 span {
-    color: var(--red);
-}
+.banner h2 { font-weight: 900 }
+.banner h2 span { color: var(--red) }
+
 .banner > div {
     width: 200px;
     height: 2.5px;
@@ -32,23 +30,6 @@
     background: transparent;
     border: .05rem solid var(--mainWhite);
     color: var(--mainWhite);
+    transition: var(--mainTransition);
 }
-.banner button:hover {
-    background: var(--red);
-}
-@media (max-width: 425px){
-    .banner {
-        width: 100vw;
-    }
-}
-@media (max-width: 767px){
-    .banner {
-        margin: 10vh auto 0;
-    }
-}
-
-@media (min-width: 767px) and (max-width: 1024px) {
-    .banner {
-        margin: 20vh auto 0;
-    }
-}
+.banner button:hover { background: var(--red) }
