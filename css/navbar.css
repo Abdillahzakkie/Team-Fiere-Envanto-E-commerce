@@ -75,7 +75,7 @@ Navbar
 ===============
 */
 nav {
-    background: #f1f5f8;
+    background: #EEEEEE;;
     position: fixed;
     top: 0;
     left: 0;
@@ -121,6 +121,11 @@ nav {
     /* background: var(--clr-primary-8);
     color: var(--clr-primary-5); */
     padding-left: 1.5rem;
+  }
+
+  #signIn  {
+    background: #F69225;
+    padding: .2rem .5rem;
   }
   .social-icons {
     display: none;
