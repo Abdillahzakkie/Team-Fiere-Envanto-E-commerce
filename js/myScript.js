@@ -9,12 +9,12 @@ const sliderBtn = [...document.querySelectorAll('.slider-btn')];
 // const sliderBtn = Array.from(document.querySelectorAll('.slider-btn'));
 
 // On load set default slider image
-window.addEventListener('DOMContentLoaded', () => slider.src = `./images/services-bg.jpg`);
+window.addEventListener('DOMContentLoaded', () => slider.src = `./images/product0.png`);
 
 sliderBtn.map(btn => {
     let count = 0;
-    const [img1, img2, img3] = ['services-bg.jpg', 'slide_02.jpg', 'slide_03.jpg'];
-    const slideImage = [img1, img2, img3];
+    const images = ['product1.png', 'product8.png', 'product0.png'];
+    const slideImage = [...images];
 
     btn.addEventListener('click', e => {
         const currentBtn = e.currentTarget.dataset.id;
