@@ -24,8 +24,8 @@
   
 /* Banner */
 @media (max-width: 425px){ .banner { width: 100vw }}
-@media (max-width: 767px){ .banner { margin: 10vh auto 0 } }
-@media (min-width: 767px) and (max-width: 1024px) { .banner { margin: 20vh auto 0 } }
+@media (max-width: 767px){ .banner { margin: 12.5vh auto 0 } }
+@media (min-width: 767px) and (max-width: 1024px) { .banner { margin: 12.5vh auto 0 } }
 
 
 /* Product title */
@@ -44,4 +44,4 @@
     }
 }
 /* Product section */
-@media (max-width: 767px) { .product-section { grid-template-columns: 1fr } }
+@media (max-width: 767px) { .product-banner { grid-template-columns: 1fr } }
